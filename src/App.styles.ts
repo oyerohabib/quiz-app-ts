@@ -14,8 +14,6 @@ export const GlobalStyle = createGlobalStyle`
     background-size: 100% 100%;
     margin: 0;
     padding: 0 20px;
-    display: flex;
-    justify-content: center;
   }
 `;
 
@@ -26,26 +24,17 @@ export const Wrapper = styled.div`
 
   > p {
     color: rgba(255, 0, 0, 0.8);
-    font-size: 20px;
-    font-weight: 700;
-  }
-
-  .score {
-    color: rgba(255, 0, 0, 0.8);
     font-size: 2rem;
+    font-weight: 700;
     margin: 0;
   }
 
   h1 {
     font-family: "Archivo Black", sans-serif;
     background-image: linear-gradient(90deg, green, blue);
-    background-size: 100%;
-    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    filter: drop-shadow(2px, 2px, #0085a3);
     font-size: 50px;
-    text-align: center;
     margin: 20px;
   }
 
@@ -62,9 +51,5 @@ export const Wrapper = styled.div`
     color: #fff;
     font-weight: 600;
     font-size: 20px;
-  }
-
-  .start {
-    max-width: 200px;
   }
 `;
