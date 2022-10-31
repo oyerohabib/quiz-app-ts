@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import QuestionCard from "./components/QuestionCard";
 import { fetchQuizQuestion, Difficulty, QuestionState } from "./API";
 import { GlobalStyle, Wrapper } from "./App.styles";
@@ -19,10 +19,6 @@ const App = () => {
   const [gameOver, setGameOver] = useState(true);
   const [questionNumber, setQuestionNumber] = useState(0);
   const [score, setScore] = useState(0);
-
-  useEffect(() => {
-    console.log(questions);
-  }, [questions]);
 
   const startQuiz = async () => {
     setLoading(true);
