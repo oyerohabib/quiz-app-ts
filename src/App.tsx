@@ -3,7 +3,7 @@ import QuestionCard from "./components/QuestionCard";
 import { fetchQuizQuestion, Difficulty, QuestionState } from "./API";
 import { GlobalStyle, Wrapper } from "./App.styles";
 
-const TOTAL_QUESTION = 10;
+const TOTAL_QUESTION = 5;
 
 export type AnswerObject = {
   question: string;
@@ -29,7 +29,7 @@ const App = () => {
     setGameOver(false);
     const newQuestions = await fetchQuizQuestion(
       TOTAL_QUESTION,
-      Difficulty.HARD,
+      Difficulty.EASY,
     );
     setQuestions(newQuestions);
     setScore(0);
